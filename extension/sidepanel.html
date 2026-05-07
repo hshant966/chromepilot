@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ChromePilot</title>
+    <link rel="stylesheet" href="sidepanel.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div>
+          <h1>ChromePilot</h1>
+          <p id="status">Connecting...</p>
+        </div>
+        <button id="refresh" title="Refresh status">↻</button>
+      </header>
+
+      <section class="profile-card">
+        <label>
+          Profile ID
+          <input id="profileId" placeholder="Profile 7 or email" />
+        </label>
+        <label>
+          Label
+          <input id="profileName" placeholder="भारत" />
+        </label>
+        <label>
+          Controller
+          <input id="controllerUrl" value="http://127.0.0.1:4777" />
+        </label>
+        <label>
+          Token
+          <input id="controllerToken" type="password" placeholder="Optional CHROMEPILOT_TOKEN" />
+        </label>
+        <button id="save">Save Profile</button>
+      </section>
+
+      <section class="chat">
+        <div id="messages"></div>
+        <form id="taskForm">
+          <textarea id="task" rows="4" placeholder="Ask ChromePilot to inspect, click, type, extract, or navigate..."></textarea>
+          <button type="submit">Run</button>
+        </form>
+      </section>
+    </main>
+    <script src="sidepanel.js"></script>
+  </body>
+</html>

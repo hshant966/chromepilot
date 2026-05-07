@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "chromepilot": {
+      "command": "node",
+      "args": ["/absolute/path/to/chromepilot/controller/src/index.js", "--mcp"]
+    }
+  }
+}

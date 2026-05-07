@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "ChromePilot",
+  "description": "Local-first Chrome automation bridge for MCP, Hermes, Codex, Gemini, and OpenAI-compatible providers.",
+  "version": "0.1.0",
+  "permissions": [
+    "activeTab",
+    "debugger",
+    "downloads",
+    "identity",
+    "offscreen",
+    "scripting",
+    "sidePanel",
+    "storage",
+    "tabs",
+    "tabGroups",
+    "unlimitedStorage",
+    "webNavigation"
+  ],
+  "host_permissions": [
+    "<all_urls>",
+    "http://127.0.0.1/*",
+    "ws://127.0.0.1/*"
+  ],
+  "background": {
+    "service_worker": "service-worker.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Open ChromePilot"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "commands": {
+    "toggle-side-panel": {
+      "description": "Open ChromePilot side panel",
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y"
+      }
+    }
+  }
+}

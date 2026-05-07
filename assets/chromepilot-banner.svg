@@ -1,0 +1,26 @@
+<svg width="1280" height="420" viewBox="0 0 1280 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="420" fill="#0B0F14"/>
+  <path d="M0 320C166 240 259 358 418 288C591 212 640 67 829 88C1017 109 1094 252 1280 170V420H0V320Z" fill="#0F766E" opacity=".35"/>
+  <path d="M0 92C148 22 265 65 386 119C511 175 638 234 782 176C940 112 1023 35 1280 72" stroke="#F59E0B" stroke-width="2" opacity=".45"/>
+  <g filter="url(#glow)">
+    <rect x="786" y="86" width="314" height="214" rx="18" fill="#111827" stroke="#334155"/>
+    <rect x="812" y="116" width="262" height="24" rx="8" fill="#1F2937"/>
+    <rect x="812" y="158" width="112" height="18" rx="6" fill="#0F766E"/>
+    <rect x="938" y="158" width="136" height="18" rx="6" fill="#374151"/>
+    <rect x="812" y="194" width="170" height="18" rx="6" fill="#374151"/>
+    <rect x="812" y="230" width="228" height="18" rx="6" fill="#F59E0B"/>
+  </g>
+  <circle cx="1060" cy="104" r="72" fill="#2563EB" opacity=".16"/>
+  <circle cx="790" cy="292" r="98" fill="#F59E0B" opacity=".10"/>
+  <text x="104" y="164" fill="#F8FAFC" font-family="Verdana, Geneva, sans-serif" font-size="72" font-weight="700">ChromePilot</text>
+  <text x="108" y="218" fill="#CBD5E1" font-family="Verdana, Geneva, sans-serif" font-size="26">Local-first browser automation for any AI agent</text>
+  <text x="110" y="270" fill="#5EEAD4" font-family="Consolas, Monaco, monospace" font-size="22">MCP • Chrome Extension • Hermes • OpenRouter • Ollama</text>
+  <defs>
+    <filter id="glow" x="746" y="46" width="394" height="294" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feGaussianBlur in="BackgroundImageFix" stdDeviation="20"/>
+      <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1_1" result="shape"/>
+    </filter>
+  </defs>
+</svg>

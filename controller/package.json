@@ -1,0 +1,20 @@
+{
+  "name": "chromepilot-controller",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "chromepilot-controller": "./src/index.js"
+  },
+  "scripts": {
+    "test": "node --test",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "express": "^4.21.2",
+    "ws": "^8.18.3",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {}
+}

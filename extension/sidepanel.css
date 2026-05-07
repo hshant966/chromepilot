@@ -1,0 +1,123 @@
+:root {
+  color-scheme: dark;
+  --bg: #111314;
+  --panel: #191d1f;
+  --panel-2: #202629;
+  --text: #f2eee8;
+  --muted: #a7b0aa;
+  --line: #2e3738;
+  --accent: #e7b45c;
+  --accent-2: #76d0c6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at 20% 0%, #293034, var(--bg) 38%);
+  color: var(--text);
+  font: 14px/1.45 ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+
+.shell {
+  min-height: 100vh;
+  padding: 14px;
+}
+
+.topbar {
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 12px;
+}
+
+h1 {
+  font-size: 18px;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+p {
+  color: var(--muted);
+  margin: 4px 0 0;
+}
+
+button {
+  background: var(--accent);
+  border: 0;
+  border-radius: 6px;
+  color: #17120a;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  min-height: 34px;
+  padding: 8px 10px;
+}
+
+button:hover {
+  filter: brightness(1.08);
+}
+
+.profile-card,
+.chat {
+  background: color-mix(in srgb, var(--panel) 92%, transparent);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  margin-top: 14px;
+  padding: 12px;
+}
+
+label {
+  color: var(--muted);
+  display: block;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--text);
+  display: block;
+  font: inherit;
+  margin-top: 4px;
+  outline: none;
+  padding: 9px;
+  width: 100%;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--accent-2);
+}
+
+#messages {
+  display: grid;
+  gap: 10px;
+  max-height: 46vh;
+  overflow: auto;
+  padding-bottom: 10px;
+}
+
+.message {
+  border-left: 2px solid var(--accent-2);
+  color: var(--text);
+  padding: 2px 0 2px 10px;
+  white-space: pre-wrap;
+}
+
+.message.user {
+  border-left-color: var(--accent);
+}
+
+#taskForm {
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 10px;
+  padding-top: 10px;
+}
